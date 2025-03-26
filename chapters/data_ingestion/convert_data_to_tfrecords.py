@@ -37,7 +37,7 @@ def convert_zipcode_to_int(zipcode):
 ################# 4/ Définition des fichiers d'entrée et de sortie #################
 
 original_data_file = "./data/consumer_complaints_with_narrative.csv" # Emplacement du fichier CSV à convertir.
-tfrecords_filename = "consumer-complaints.tfrecords" # Nom du fichier de sortie TFRecords.
+tfrecords_filename = "./data/consumer-complaints.tfrecords" # Nom du fichier de sortie TFRecords.
 tf_record_writer = tf.io.TFRecordWriter(tfrecords_filename) # Ouvre un fichier TFRecords en mode écriture.
 
 ################# 5/ Lecture du CSV et écriture des TFRecords #################
